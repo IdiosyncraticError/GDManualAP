@@ -1,7 +1,28 @@
 {
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
-  "s": {
-    "connects_to": [],
-    "requires": ""
+  "start": {
+    "connects_to": ["SoldatR", "RookR", "MorticianR", "OfficerR", "JaegerR", "LancerR", "VanguardR"],
+    "starting": true
+  },
+  "SoldatR": {
+    "requires": "|Soldat|"
+  },
+  "RookR": {
+    "requires": "|Rook|"
+  },
+  "MorticianR": {
+    "requires": "|Mortician|"
+  },
+  "OfficerR": {
+    "requires": "|Officer|"
+  },
+  "JaegerR": {
+    "requires": "|Jaeger|"
+  },
+  "LancerR": {
+    "requires": "|Lancer|"
+  },
+  "VanguardR": {
+    "requires": "|Vanguard|"
   }
 }
