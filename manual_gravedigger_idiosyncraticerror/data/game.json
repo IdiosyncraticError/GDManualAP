@@ -1,7 +1,7 @@
 {
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
-  "game": "GraveDigger",
+  "game": "Grave/Digger",
   "creator": "IdiosyncraticError",
-  "filler_item_name": "sdf",
+  "filler_item_name": "hi",
   "starting_items": []
 }
