@@ -19,5 +19,15 @@
     },
     "VanguardC": {
         "hidden": true
+    },
+    "Tools": {
+        "yaml_option": [
+            "random_tool"
+        ]
+    },
+    "Class Equipment": {
+        "yaml_option": [
+            "random_class_tool"
+        ]
     }
 }

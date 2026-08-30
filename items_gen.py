@@ -12,21 +12,21 @@ classes = [
 ]
 
 class_equipment = [
-    ["Ammunition Pouches", "SoldatC"],
-    ["Heavy Pickaxe", "RookC"],
-    ["Mining Bomb Launcher", "RookC"],
-    ["Construct Hammer", "RookC"],
-    ["Medical Syrettes", "MorticianC"],
-    ["Stimulant Compounds", "MorticianC"],
-    ["Trench Whistle", "OfficerC"],
-    ["Recon Kit", "OfficerC"],
-    ["Hunter Kit", "JaegerC"],
-    ["Smokescreen Bombs", "JaegerC"],
-    ["Heavy Lance", "LancerC"],
-    ["Throwing Axes", "LancerC"],
-    ["Painkiller Injector", "LancerC"],
-    ["Bulwark's Shield", "BulwarkC"],
-    ["Rally Banner" "BulwarkC"]
+    ["Ammunition Pouches", ["SoldatC"]],
+    ["Heavy Pickaxe", ["RookC"]],
+    ["Mining Bomb Launcher", ["RookC", "Weapon"]],
+    ["Construct Hammer", ["RookC"]],
+    ["Medical Syrettes", ["MorticianC"]],
+    ["Stimulant Compounds", ["MorticianC"]],
+    ["Trench Whistle", ["OfficerC"]],
+    ["Recon Kit", ["OfficerC"]],
+    ["Hunter Kit", ["JaegerC"]],
+    ["Smokescreen Bombs", ["JaegerC"]],
+    ["Heavy Lance", ["LancerC", "Weapon"]],
+    ["Throwing Axes", ["LancerC", "Weapon"]],
+    ["Painkiller Injector", ["LancerC"]],
+    ["Bulwark's Shield", ["BulwarkC"]],
+    ["Rally Banner", ["BulwarkC"]]
 ]
 
 shocks = [
@@ -108,7 +108,17 @@ for c in classes:
     obj = {}
     obj["count"] = 1
     obj["name"] = c
-    obj["category"] = ["Classes"]
+    obj["category"] = ["Classes", c + "C"]
+    obj["progression"] = True
+    output.append(obj)
+
+for e in class_equipment:
+    obj = {}
+    obj["count"] = 1
+    obj["name"] = e[0]
+    cat = ["Class Equipment"]
+    cat.extend(e[1])
+    obj["category"] = cat
     obj["progression"] = True
     output.append(obj)
 

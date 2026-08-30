@@ -26,6 +26,15 @@ from typing import Type, Any
 # To add an option, use the before_options_defined hook below and something like this:
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
+class WinCount(Range):
+    """
+    How many weapons you must have before being able to claim the victory location.
+    Mining picks and the default melee weapon do not count towards this total.
+    """
+    display_name = "Win Requirement"
+    range_start = 10
+    range_end = 35
+    default = 30
 
 class KillCount(Range):
     """How many kills each location requires"""
@@ -60,6 +69,7 @@ class RandomClassTools(Toggle):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
+    options["win_count"] = WinCount
     options["location_kills"] = KillCount
     options["rando_kit_count"] = KitCount
     options["enabled_classes"] = EnabledClasses
