@@ -1,134 +1,167 @@
 import json
 
-phighters = [
-    "Sword",
-    "Skateboard",
-    "Biograft",
-    "Katana",
-    "Ban Hammer",
-    "Rocket",
-    "Slingshot",
-    "Hyperlaser",
-    "Shuriken",
-    "Scythe",
-    "Medkit",
-    "Boombox",
-    "Subspace",
-    "Vine Staff",
-    "Coil"
+classes = [
+    "Soldat",
+    "Rook",
+    "Mortician",
+    "Officer",
+    "Jaeger",
+    "Lancer",
+    "Vanguard"
+    #cowboy eventually maybe
 ]
 
-abilities = [
-    "M2",
-    "E",
-    "Q",
-    "Phinisher"
+class_equipment = [
+    "Ammunition Pouches",
+    "Heavy Pickaxe",
+    "Mining Bomb Launcher",
+    "Construct Hammer",
+    "Medical Syrettes",
+    "Stimulant Compounds",
+    "Trench Whistle",
+    "Recon Kit",
+    "Hunter Kit",
+    "Smokescreen Bombs",
+    "Heavy Lance",
+    "Throwing Axes",
+    "Painkiller Injector",
+    "Bulwark's Shield",
+    "Rally Banner"
+]
+
+shocks = [
+    "Storm Trooper",
+    "Anti-Material Trooper",
+    "Flame Trooper",
+    "Radio Trooper",
+    "Geist Trooper",
+    "Trench Trooper",
+    "Bulwark Trooper"
+]
+
+primaries = [
+    "'Prince' Long Rifle",
+    "'Adjudicator' Repeating Rifle",
+    "'Kingslayer' Percussion Revolver",
+    "'Okhotnik' Hunting Crossbow",
+    "'Whisper' Silenced Rifle",
+    "'Crestfall' Lever Rifle",
+    "'Jesse' Combat Rifle",
+    "'Equine' Riding Shotgun",
+    "'Volk' Scoped Rifle",
+    "'Judgement' Breech Rifle",
+    "'Hellion' Automatic Shotgun"
+]
+
+secondaries = [
+    "'Grace' Service Revolver",
+    "'Hope' Automatic Pistol",
+    "'Honour' Duty Pistol",
+    "'Talon' Army Revolver",
+    "Cavalry Sword",
+    "'Negotiator' Pocket Shotgun",
+    "'Knell' Silenced Revolver",
+    "'Union' Military Pistol",
+    "'Auclair' Lever Pistol"
+]
+
+mods = [
+    "'Whisper' Flyboy Rifle",
+    "'Negotiator' Long Shotgun",
+    "'Union' Stocked Pistol",
+    "'Hellion' Heavy Shotgun",
+    "'Judgement' Incendiary Rifle",
+    "'Talon' Cavalry Revolver",
+    "'Volk' Frontline Rifle",
+    "'Crestfall' Ranger Rifle",
+    "'Jesse' Precision Rifle",
+    "'Equine' Sawed Shotgun",
+    "'Knell' Bandit Revolver",
+    "'Honour' Insurgent Pistol"
+]
+
+perks = [
+    "Greyhound",
+    "Hippocratic",
+    "Apparition",
+    "Butcher",
+    "Chemist",
+    "Tunnel-Rat",
+    "Ambidextrous",
+    "Leatherneck",
+    "Marksman",
+    "Snake Eyes",
+    "Devil Dog",
+    "Veteran",
+    "Black Hand",
+    "Survivalist"
+]
+
+tools = [
+    "Melee Sheath",
+    "Mining Pick",
+    "First Aid Pouch"
 ]
 
 output = []
-for phighter in phighters:
+for c in classes:
     obj = {}
     obj["count"] = 1
-    obj["name"] = phighter + " Unlock"
-    obj["category"] = ["Phighter Unlock"]
+    obj["name"] = c
+    obj["category"] = ["Classes"]
     obj["progression"] = True
     output.append(obj)
-    
-for phighter in phighters:
-    if phighter == "Sword":
-        types = ["", "Base ", "Empowered "]
-        for t in types:
-            for ab in abilities:
-                if ab != "Phinisher" and (t != "Base " or t != "Empowered "):
-                    obj = {}
-                    obj["count"] = 1
-                    obj["name"] = "Sword " + t + ab + " Unlock"
-                    if t == "":
-                        obj["category"] = ["Sword Ability Unlock", "!Sword Abilitysanity", "Abilitysanity"]
-                    else:
-                        obj["category"] = ["Sword Ability Unlock", "Sword Abilitysanity", "Abilitysanity"]
-                    obj["progression"] = True
-                    output.append(obj)
-        phin = {
-            "count": 1,
-            "name": "Sword Phinisher Unlock",
-            "category": ["Sword Ability Unlock", "Abilitysanity"],
-            "progression": True
-        }
-        output.append(phin)
-    elif phighter == "Skateboard":
-        types = ["", "Offboard ", "Onboard "]
-        for t in types:
-            for ab in abilities:
-                if ab != "Phinisher" and (t != "Offboard " or t != "Onboard "):
-                    obj = {}
-                    obj["count"] = 1
-                    obj["name"] = "Skateboard " + t + ab + " Unlock"
-                    if t == "":
-                        obj["category"] = ["Skateboard Ability Unlock", "!Skateboard Abilitysanity", "Abilitysanity"]
-                    else:
-                        obj["category"] = ["Skateboard Ability Unlock", "Skateboard Abilitysanity", "Abilitysanity"]
-                    obj["progression"] = True
-                    output.append(obj)
-        phin = {
-            "count": 1,
-            "name": "Skateboard Phinisher Unlock",
-            "category": ["Skateboard Ability Unlock", "Abilitysanity"],
-            "progression": True
-        }
-        output.append(phin)
-    elif phighter == "Scythe":
-        types = ["", "Melee ", "Ranged "]
-        for t in types:
-            for ab in abilities:
-                obj = {}
-                obj["count"] = 1
-                obj["name"] = "Scythe " + t + ab + " Unlock"
-                if t == "":
-                    obj["category"] = ["Scythe Ability Unlock", "!Scythe Abilitysanity", "Abilitysanity"]
-                else:
-                    obj["category"] = ["Scythe Ability Unlock", "Scythe Abilitysanity", "Abilitysanity"]
-                obj["progression"] = True
-                output.append(obj)
-    elif phighter == "Coil":
-        types = ["", "Regen ", "Bounce ", "Haste "]
-        for t in types:
-            for ab in abilities:
-                if ab != "Phinisher":
-                    obj = {}
-                    obj["count"] = 1
-                    obj["name"] = "Coil " + t + ab + " Unlock"
-                    if t == "":
-                        obj["category"] = ["Coil Ability Unlock", "!Coil Abilitysanity", "Abilitysanity"]
-                    else:
-                        obj["category"] = ["Coil Ability Unlock", "Coil Abilitysanity", "Abilitysanity"]
-                    obj["progression"] = True
-                    output.append(obj)
-                elif ab == "Phinisher" and t == "":
-                    obj = {
-                        "count": 1,
-                        "name": "Coil Phinisher Unlock",
-                        "category": ["Coil Ability Unlock", "Abilitysanity"],
-                        "progression": True
-                    }
-                    output.append(obj)
-        for ab in abilities:
-            if ab != "Phinisher":
-                obj = {
-                    "count": 1,
-                    "name": "Coil Phinisher " + ab + " Unlock",
-                    "category": ["Coil Ability Unlock", "Coil Phinisher Abilitysanity", "Abilitysanity"],
-                    "progression": True
-                }
-                output.append(obj)
+
+for s in shocks:
+    obj = {}
+    obj["count"] = 1
+    obj["name"] = s
+    obj["category"] = ["Shock Troopers"]
+    obj["useful"] = True
+    output.append(obj)
+
+for g in primaries:
+    obj = {}
+    obj["count"] = 1
+    obj["name"] = g
+    obj["category"] = ["Weapons", "Primaries"]
+    obj["progression"] = True
+    output.append(obj)
+
+for g in secondaries:
+    obj = {}
+    obj["count"] = 1
+    obj["name"] = g
+    obj["category"] = ["Weapons", "Secondaries"]
+    obj["progression"] = True
+    output.append(obj)
+
+for g in mods:
+    obj = {}
+    obj["count"] = 1
+    obj["name"] = g
+    if g == "'Knell' Bandit Revolver" or g == "'Honour' Insurgent Pistol":
+        obj["category"] = ["Weapons", "Secondaries"]
     else:
-        for ab in abilities:
-            obj = {}
-            obj["count"] = 1
-            obj["name"] = phighter + " " + ab + " Unlock"
-            obj["category"] = [phighter + " Ability Unlock", "Abilitysanity"]
-            obj["progression"] = True
-            output.append(obj)
+        obj["category"] = ["Weapons", "Primaries"]
+    obj["progression"] = True
+    output.append(obj)
+
+for p in perks:
+    obj = {}
+    obj["count"] = 1
+    obj["name"] = p
+    obj["category"] = ["Perks"]
+    obj["progression"] = True
+    output.append(obj)
+
+for t in tools:
+    obj = {}
+    obj["count"] = 1
+    obj["name"] = t
+    obj["category"] = ["Tools"]
+    obj["progression"] = True
+    output.append(obj)
 
 with open("data.json", "w") as file:
     json.dump(output, file, indent=4)

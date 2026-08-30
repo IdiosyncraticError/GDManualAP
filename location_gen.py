@@ -1,169 +1,44 @@
 import json
 
-phighters = [
-    "Sword",
-    "Skateboard",
-    "Biograft",
-    "Katana",
-    "Ban Hammer",
-    "Rocket",
-    "Slingshot",
-    "Hyperlaser",
-    "Shuriken",
-    "Scythe",
-    "Medkit",
-    "Boombox",
-    "Subspace",
-    "Vine Staff",
-    "Coil"
+primaries = [
+    "'Prince' Long Rifle",
+    "'Adjudicator' Repeating Rifle",
+    "'Kingslayer' Percussion Revolver",
+    "'Okhotnik' Hunting Crossbow",
+    "'Whisper' Silenced Rifle",
+    "'Crestfall' Lever Rifle",
+    "'Jesse' Combat Rifle",
+    "'Equine' Riding Shotgun",
+    "'Volk' Scoped Rifle",
+    "'Judgement' Breech Rifle",
+    "'Hellion' Automatic Shotgun"
 ]
 
-maps = [
-    "Banland",
-    "BOGIO Skatepark",
-    "Chaos Canyon",
-    "Craterdust Capital",
-    "Darkage Cliffs",
-    "DODGEBALL!",
-    "Domino Valley",
-    "Doomspire",
-    "Hotel Elephant",
-    "King of the Hill",
-    "Nuke The Whales",
-    "Protect Telamon",
-    "Raven Rock",
-    "ROBLOX Arcade",
-    "ROBLOX Bowling Alley",
-    "ROBLOX City",
-    "ROBLOX HQ",
-    "ROBLOX Laundromat",
-    "ROBLOX Mall",
-    "ROBLOX Museum",
-    "Rob the ROBLOX Bank",
-    "Rocket Arena",
-    "Shooting Teapot Observatory",
-    "Space Knights",
-    "Sword Fight On The Heights",
-    "Sword Fighting Tournament",
-    "The Bread Factory",
-    "The Iron Cafe",
-    "Train Demolition",
-    "Underground War"
+secondaries = [
+    "'Grace' Service Revolver",
+    "'Hope' Automatic Pistol",
+    "'Honour' Duty Pistol",
+    "'Talon' Army Revolver",
+    "Cavalry Sword",
+    "'Negotiator' Pocket Shotgun",
+    "'Knell' Silenced Revolver",
+    "'Union' Military Pistol",
+    "'Auclair' Lever Pistol"
 ]
 
-mvp_badges = [
-    "MVP",
-    "SVP",
-    "sidekick",
-    "perfection",
-    "unstoppable",
-    "berserker",
-    "bloodbath",
-    "scourge",
-    "bulwark"
-]
-
-#skins = {
-#    "Sword": ["Sci-Fi Sword", "Marshmallow Sword", "Follower Sword", "Sunburst Sword", "Harpy Sword"],
-#    "Skateboard": ["Hoverboard", "Snowboard", "Egobworder", "Surfboard", "Hellboarder"],
-#    "Biograft": ["Floatie Biograft", "Biocarved", "Betagraft", "Cocoagraft", "Biohazard", "Beetlegraft"],
-#    "Katana": ["Kramptana", "Moaitana", "Cybertana", "Follower Katana", "Katana Neo", "Fishertana"],
-#    "Ban Hammer": ["Frankenhammer", "Sunkenhammer", "Clownhammer", "Rockhammer"],
-#    "Rocket": ["PJ Rocket", "Buster Rocket", "Stargazer Rocket", "Party Rocket"],
-#    "Slingshot": ["Catshot", "Cozyshot", "Cursedshot", "Seashot", "Bugshot"],
-#    "Hyperlaser": ["Witchlaser", "Seraphlaser", "Yulaser", "Kittylaser"],
-#    "Shuriken": ["Shurifin", "Shuri-long", "Astroken", "Shurisuit"],
-#    "Scythe": ["Dutchman Scythe", "Reaper Scythe"],
-#    "Medkit": ["Medcarrot", "Pirate Medkit", "Sianachkit", "7MK0", "Bivekit", "Madkit", "Wranglerkit"],
-#    "Boombox": ["Cooler Boombox", "Eggsquerade Boombox", "Rainbox", "Astrobox", "Boomwave"],
-#    "Subspace": ["Exorspace", "Cutiespace", "Jesterspace", "Grieferspace", "Outerspace", "Glitchspace"],
-#    "Vine Staff": ["Valleystaff", "Vine Splash", "Vineberry", "Mothstaff"],
-#    "Coil": ["Coil 2.0", "Sharkbite Coil", "Punk Coil", "Werecoil"]
-#}
-
-skin_count = 50
-sticker_count = 50
-
-rng = [
-    "a x13 round",
-    "a x66.6 round",
-    "Fractured Space"
-]
-
-bonus_rounds = [
-    "One for All",
-    "Phighter Beans",
-    "Random Phighters",
-    "25% more damage",
-    "25% more speed",
-    "25% more phinisher charge rate"
-]
-
-sword_events = [
-    "Firebrand",
-    "Windforce",
-    "Icedagger",
-    "Ghostwalker",
-    "Venomshank",
-    "Darkheart",
-    "Illumina",
-    "Dom",
-    "Valk"
-]
-
-phest_titles = [
-    "Fan",
-    "Member",
-    "Enjoyer",
-    "Lover",
-    "Pawn",
-    "Player",
-    "Phighter",
-    "Pro",
-    "Ace",
-    "Expert",
-    "Knight",
-    "Paladin",
-    "Champion",
-    "Boss",
-    "Master",
-    "Ruler",
-    "Emperor",
-    "Monarch",
-    "Idol",
-    "Divinity",
-    "Deity",
-    "God",
-    "Celestial",
-    "Immortal",
-    "a +"
-]
-
-badges = [ #option check if abilitysanity is turned on then requires ability unlock
-    ["welcome phighter!", ""],
-    ["stuck sword", "Sword", "{OptOne(|Sword Phinisher Unlock|)}"],
-    ["direct detonation", "Rocket", "{OptOne(|Rocket M2 Unlock|)}"],
-    ["sharp shooter", "Slingshot", "{OptOne(|Slingshot Q Unlock|)}"],
-    ["guardian angel", "Medkit", "{OptOne(|Medkit Phinisher Unlock|)}"],
-    ["bass drop", "Boombox", "{OptOne(|Boombox Phinisher Unlock|)}"],
-    ["vehicular manslaughter", "Skateboard", "{OptOne(|Skateboard E Unlock|) or OptOne(|Skateboard Offboard E Unlock)}"], #okay but like fr what the fuck am i putting here sob sob
-    ["your demise", "Biograft", "{OptOne(|Biograft Q Unlock|)}"],
-    ["bounty collected", "Hyperlaser", "{OptOne(|Hyperlaser Phinisher Unlock|)}"],
-    ["experiment successful", "Subspace", "{OptOne(|Subspace Phinisher Unlock|)}"],
-    ["sever the soul", "Katana", "{OptOne(|Katana Phinisher Unlock|)}"],
-    ["silver shadow", "Shuriken", "{OptAll(|Shuriken Phinisher Unlock| and |Shuriken Q Unlock|)}"],
-    #["new beginnings", "Vine Staff", "|Vine Staff Phinisher Unlock|"], #oookay is this one even possible who knows
-    ["adjourned", "Ban Hammer", "{OptOne(|Ban Hammer Phinisher Unlock|)}"],
-    ["headhunter", "Scythe"], #L no requirements
-    ["cold snap", "Coil", "{OptOne(|Coil Phinisher Unlock|)}"],
-    ["first steps", ""],
-    ["PWNED!", ""],
-    ["the one", "Challenge"], #this one needs its own category lmaooo
-    #ive nearly gotten a penta like 5 times it pmo
-    ["devil's game", ""], #this is also just the x66 location
-    ["Supreme Survivor", "Challenge"], #this too
-    #["caged by the dead", ""], #this already exists as doomsekkar location so like... idk
-    #["level 25"] ??
+mods = [
+    "'Whisper' Flyboy Rifle",
+    "'Negotiator' Long Shotgun",
+    "'Union' Stocked Pistol",
+    "'Hellion' Heavy Shotgun",
+    "'Judgement' Incendiary Rifle",
+    "'Talon' Cavalry Revolver",
+    "'Volk' Frontline Rifle",
+    "'Crestfall' Ranger Rifle",
+    "'Jesse' Precision Rifle",
+    "'Equine' Sawed Shotgun",
+    "'Knell' Bandit Revolver",
+    "'Honour' Insurgent Pistol"
 ]
 
 output = []
