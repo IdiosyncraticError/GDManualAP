@@ -1,0 +1,17 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+  "data": [
+    {
+      "count": 1,
+      "name": "your mom",
+      "category": [],
+      "progression": true
+    },
+    {
+      "count": 1,
+      "name": "d",
+      "category": [],
+      "filler": true
+    }
+  ]
+}
