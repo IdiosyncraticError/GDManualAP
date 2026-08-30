@@ -173,5 +173,5 @@ for t in tools:
     obj["progression"] = True
     output.append(obj)
 
-with open("data.json", "w") as file:
+with open("items.json", "w") as file:
     json.dump(output, file, indent=4)

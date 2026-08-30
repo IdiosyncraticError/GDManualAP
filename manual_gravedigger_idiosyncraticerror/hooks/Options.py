@@ -39,7 +39,7 @@ class WinCount(Range):
 class KillCount(Range):
     """How many kills each location requires"""
     display_name = "Location Kill Requirement"
-    range_start = 1
+    range_start = 5
     range_end = 30
     default = 10
 
@@ -67,6 +67,12 @@ class RandomClassTools(Toggle):
     """Randomizes class specific items (e.g. ammo pouch, bulwark shield, hunting kit)"""
     display_name = "Randomized Perk Equipment"
 
+class FillerName(Choice):
+    """Pick a side for filler item names"""
+    display_name = "Filler Name"
+    option_royal_nation = 0
+    option_golden_empire = 1
+
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["win_count"] = WinCount
@@ -75,6 +81,7 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["enabled_classes"] = EnabledClasses
     options["random_tool"] = RandomTools
     options["random_class_tool"] = RandomClassTools
+    options["filler_name"] = FillerName
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

@@ -35,6 +35,30 @@ import logging
 # Use this function to change the valid filler items to be created to replace item links or starting items.
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
+    filler_nation = [
+        "This war is not the first and it will not be the last, fight for our future!",
+        "We are stronger than this, Soldiers! Do not give in to these freaks!",
+        "Press on to victory!",
+        "The Nation salutes you!",
+        "Send them all to hell!",
+        "These fanatics think they can rule our proud Nation, show them our might and what true conviction is!",
+        "These tyrants know nothing of freedom! Cut them down and we shall liberate the world from this plague!"
+    ]
+    filler_empire = [
+        "Onwards to victory, for the Golden Empire, and the Golden Era.",
+        "The Reaper looms large over their corrupted hearts. Let them regret being weeds in the garden of God.",
+        "Let these heretics fall by your blade, win this skirmish for the Golden Empire and our future.",
+        "You are blessed this righteous day.",
+        "Fight on and do not falter.",
+        "Maintain your pace.",
+        "The Empire blesses you this day, ensure the dogs do not see the light of day."
+    ]
+    side = get_option_value(multiworld, player, "filler_name")
+    if side == 0:
+        return world.random.choice("King's Decree: " + filler_nation)
+    else:
+        return world.random.choice("Queen's Will: " + filler_empire)
+
     return False
 
 def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
@@ -60,6 +84,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             for location in list(region.locations):
                 if location.name in locationNamesToRemove:
                     region.locations.remove(location)
+
+    kill_locations = []
+    for i in range(world.options.sticker_range.value):
+        sticker_locations.append("Purchase " + str(i+1) + " sticker(s)")
 
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:

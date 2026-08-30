@@ -44,122 +44,43 @@ mods = [
     "'Honour' Insurgent Pistol"
 ]
 
+equipment = [
+    "Mining Bomb Launcher"
+    "Heavy Lance",
+    "Throwing Axes"
+]
+
 output = []
 
-victory = {
-    "name": "victory",
-    "victory": True,
-    "requires": "{OptionCount(@Win Progression, total_phighter_win_count)}"
-}
-output.append(victory)
-
-for m in maps:
-    for phighter in phighters:
-        obj = {}
-        obj["name"] = "Win on " + m + " - " + phighter
-        obj["region"] = phighter
-        obj["category"] = ["Map Wins", phighter + " Map Wins"]
-        output.append(obj)
-
-for b in mvp_badges:
-    for phighter in phighters:
-        obj = {}
-        if b.endswith("VP"):
-            obj["name"] = "Be the " + b + " - " + phighter
-        else:
-            obj["name"] = "Get the " + b + " badge - " + phighter
-        
-        obj["region"] = phighter
-        obj["category"] = ["MVP Badges", phighter + " MVP Badges"]
-        output.append(obj)
-
-healer = ["Medkit", "Vine Staff", "Coil"]
-for h in healer:
-    obj = {
-        "name": "Get the guardian badge - " + h,
-        "region": h,
-        "category": ["MVP Badges", h + " MVP Badges"]
-    }
-    output.append(obj)
-
-        
-for hi in rng:
-    obj = {
-        "name": "Experience " + hi,
-        "category": ["Luck Rounds"]
-    }
-    output.append(obj)
-    
-for hi in bonus_rounds:
-    obj = {
-        "name": "Experience " + hi,
-        "category": ["Bonus Rounds"]
-    }
-    output.append(obj)
-
-for hi in sword_events:
-    obj = {
-        "name": "\"Meet\" " + hi,
-        "category": ["Sword Events"]
-    }
-    output.append(obj)
-
-for title in phest_titles:
-    obj = {
-        "name": "Earn " + title,
-        "category": ["Phest Titles"]
-    }
-    output.append(obj)
-
-doomsekkar = {
-    "name": "Defeat Doomsekkar",
-    "category": ["Doomsekkar"]
-}
-output.append(doomsekkar)
-
-boomball = {
-    "name": "Play Boomball",
-    "category": ["Boomball"]
-}
-
-#for phighter, skin in skins.items():
-#    for s in skin:
-#        obj = {
-#           "name": "Purchase " + s,
-#            "region": phighter,
-#            "category": ["Skins"]
-#        }
-#    output.append(obj)
-
-for i in range(skin_count):
-    obj = {
-        "name": "Purchase " + str(i+1) + " skin(s)",
-        "category": ["Skins"]
-    }
-    output.append(obj)
-
-for i in range(sticker_count):
-    obj = {
-        "name": "Purchase " + str(i+1) + " sticker(s)",
-        "category": ["Stickers"]
-    }
-    output.append(obj)
-
-for i in badges:
+for i in primaries:
     obj = {}
-    obj["name"] = "Get the " + i[0] + " achievement"
-    cat_list = ["Achievements"]
-    if i[1] == "Challenge":
-        cat_list.append(i[1])
-    elif i[1] != "":
-        obj["region"] = i[1]
-
-    obj["category"] = cat_list
-
-    if 3 == len(i):
-        obj["requires"] = i[2]
-
+    obj["name"] = "X kills with " + i
+    obj["category"] = ["Weapons", "Primaries"]
     output.append(obj)
 
-with open("data.json", "w") as file:
+for i in secondaries:
+    obj = {}
+    obj["name"] = "X kills with " + i
+    obj["category"] = ["Weapons", "Secondaries"]
+    output.append(obj)
+
+for i in mods:
+    obj = {}
+    obj["name"] = "X kills with " + i
+    if i == "'Knell' Bandit Revolver" or i == "'Honour' Insurgent Pistol":
+        obj["category"] = ["Weapons", "Secondaries"]
+    else:
+        obj["category"] = ["Weapons", "Primaries"]
+    output.append(obj)
+
+for i in equipment:
+    obj = {}
+    obj["name"] = "X kills with " + i
+    if i == "Mining Bomb Launcher":
+        obj["region"] = "RookR"
+    else:
+        obj["region"] = "LancerR"
+    obj["category"] = ["Weapons", "Class Equipment"]
+
+with open("locations.json", "w") as file:
     json.dump(output, file, indent=4)
