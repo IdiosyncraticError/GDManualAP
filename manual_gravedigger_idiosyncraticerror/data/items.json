@@ -1,6 +1,683 @@
-{
-  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
-  "data": [
-
-  ]
-}
+[
+    {
+        "count": 1,
+        "name": "Soldat",
+        "category": [
+            "Classes",
+            "SoldatC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Rook",
+        "category": [
+            "Classes",
+            "RookC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Mortician",
+        "category": [
+            "Classes",
+            "MorticianC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Officer",
+        "category": [
+            "Classes",
+            "OfficerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Jaeger",
+        "category": [
+            "Classes",
+            "JaegerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Lancer",
+        "category": [
+            "Classes",
+            "LancerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Vanguard",
+        "category": [
+            "Classes",
+            "VanguardC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Ammunition Pouches",
+        "category": [
+            "Class Equipment",
+            "SoldatC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Heavy Pickaxe",
+        "category": [
+            "Class Equipment",
+            "RookC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Mining Bomb Launcher",
+        "category": [
+            "Class Equipment",
+            "RookC",
+            "Weapon"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Construct Hammer",
+        "category": [
+            "Class Equipment",
+            "RookC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Medical Syrettes",
+        "category": [
+            "Class Equipment",
+            "MorticianC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Stimulant Compounds",
+        "category": [
+            "Class Equipment",
+            "MorticianC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Trench Whistle",
+        "category": [
+            "Class Equipment",
+            "OfficerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Recon Kit",
+        "category": [
+            "Class Equipment",
+            "OfficerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Hunter Kit",
+        "category": [
+            "Class Equipment",
+            "JaegerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Smokescreen Bombs",
+        "category": [
+            "Class Equipment",
+            "JaegerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Heavy Lance",
+        "category": [
+            "Class Equipment",
+            "LancerC",
+            "Weapon"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Throwing Axes",
+        "category": [
+            "Class Equipment",
+            "LancerC",
+            "Weapon"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Painkiller Injector",
+        "category": [
+            "Class Equipment",
+            "LancerC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Bulwark's Shield",
+        "category": [
+            "Class Equipment",
+            "BulwarkC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Rally Banner",
+        "category": [
+            "Class Equipment",
+            "BulwarkC"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Storm Trooper",
+        "category": [
+            "Shock Troopers"
+        ],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Anti-Material Trooper",
+        "category": [
+            "Shock Troopers"
+        ],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Flame Trooper",
+        "category": [
+            "Shock Troopers"
+        ],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Radio Trooper",
+        "category": [
+            "Shock Troopers"
+        ],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Geist Trooper",
+        "category": [
+            "Shock Troopers"
+        ],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Trench Trooper",
+        "category": [
+            "Shock Troopers"
+        ],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "Bulwark Trooper",
+        "category": [
+            "Shock Troopers"
+        ],
+        "useful": true
+    },
+    {
+        "count": 1,
+        "name": "'Prince' Long Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Adjudicator' Repeating Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Kingslayer' Percussion Revolver",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Okhotnik' Hunting Crossbow",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Whisper' Silenced Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Crestfall' Lever Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Jesse' Combat Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Equine' Riding Shotgun",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Volk' Scoped Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Judgement' Breech Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Hellion' Automatic Shotgun",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Grace' Service Revolver",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Hope' Automatic Pistol",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Honour' Duty Pistol",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Talon' Army Revolver",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Cavalry Sword",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Negotiator' Pocket Shotgun",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Knell' Silenced Revolver",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Union' Military Pistol",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Auclair' Lever Pistol",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Whisper' Flyboy Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Negotiator' Long Shotgun",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Union' Stocked Pistol",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Hellion' Heavy Shotgun",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Judgement' Incendiary Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Talon' Cavalry Revolver",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Volk' Frontline Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Crestfall' Ranger Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Jesse' Precision Rifle",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Equine' Sawed Shotgun",
+        "category": [
+            "Weapons",
+            "Primaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Knell' Bandit Revolver",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "'Honour' Insurgent Pistol",
+        "category": [
+            "Weapons",
+            "Secondaries"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Greyhound",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Hippocratic",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Apparition",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Butcher",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Chemist",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Tunnel-Rat",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Ambidextrous",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Leatherneck",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Marksman",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Snake Eyes",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Devil Dog",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Veteran",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Black Hand",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Survivalist",
+        "category": [
+            "Perks"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Melee Sheath",
+        "category": [
+            "Tools"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "Mining Pick",
+        "category": [
+            "Tools"
+        ],
+        "progression": true
+    },
+    {
+        "count": 1,
+        "name": "First Aid Pouch",
+        "category": [
+            "Tools"
+        ],
+        "progression": true
+    }
+]
