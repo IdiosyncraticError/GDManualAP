@@ -18,3 +18,10 @@ kill ceiling: 25-30
 options for # of accumulated kills
 options for which classes should be in the pool
 options for how many randomized loadouts there should be
+
+
+
+todo:
+- random kit location creation in world
+- edit weapon locations based on option in world
+- 

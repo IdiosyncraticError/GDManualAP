@@ -20,6 +20,9 @@
     "VanguardC": {
         "hidden": true
     },
+    "Weapons": {
+        "hidden": true
+    },
     "Tools": {
         "yaml_option": [
             "random_tool"
