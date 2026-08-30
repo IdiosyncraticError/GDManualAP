@@ -10,6 +10,8 @@ what if i actually randomly generate the loadouts..... JROOOOOL
 so its not like every loadout is specifically primary + secondary + perk + class + class gear(s), some could just be primary + secondary or something like that. but it has to have at least 2. also randomized kill count? idk
 if possible make filler item name randomize between different queens will/kings decree announcement things
 
+maybe add a thing to make like 2 kill locations per gun (e.g. 9 and 18)
+
 
 kill ceiling: 25-30
 

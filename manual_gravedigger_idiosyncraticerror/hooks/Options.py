@@ -50,13 +50,21 @@ class EnabledClasses(OptionSet):
     keys = item_name_groups["Classes"]
     default = frozenset(keys)
 
+class RandomTools(Toggle):
+    """Randomizes mining pick, first aid kit, and melee"""
+    display_name = "Randomized Tools"
 
+class RandomClassTools(Toggle):
+    """Randomizes class specific items (e.g. ammo pouch, bulwark shield, hunting kit)"""
+    display_name = "Randomized Perk Equipment"
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["location_kills"] = KillCount
     options["rando_kit_count"] = KitCount
     options["enabled_classes"] = EnabledClasses
+    options["random_tool"] = RandomTools
+    options["random_class_tool"] = RandomClassTools
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

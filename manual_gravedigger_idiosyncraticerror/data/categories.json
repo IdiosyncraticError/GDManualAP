@@ -1,1 +1,23 @@
-{}
+{
+    "SoldatC": {
+        "hidden": true
+    },
+    "RookC": {
+        "hidden": true
+    },
+    "MorticianC": {
+        "hidden": true
+    },
+    "OfficerC": {
+        "hidden": true
+    },
+    "JaegerC": {
+        "hidden": true
+    },
+    "LancerC": {
+        "hidden": true
+    },
+    "VanguardC": {
+        "hidden": true
+    }
+}

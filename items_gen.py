@@ -12,21 +12,21 @@ classes = [
 ]
 
 class_equipment = [
-    "Ammunition Pouches",
-    "Heavy Pickaxe",
-    "Mining Bomb Launcher",
-    "Construct Hammer",
-    "Medical Syrettes",
-    "Stimulant Compounds",
-    "Trench Whistle",
-    "Recon Kit",
-    "Hunter Kit",
-    "Smokescreen Bombs",
-    "Heavy Lance",
-    "Throwing Axes",
-    "Painkiller Injector",
-    "Bulwark's Shield",
-    "Rally Banner"
+    ["Ammunition Pouches", "SoldatC"],
+    ["Heavy Pickaxe", "RookC"],
+    ["Mining Bomb Launcher", "RookC"],
+    ["Construct Hammer", "RookC"],
+    ["Medical Syrettes", "MorticianC"],
+    ["Stimulant Compounds", "MorticianC"],
+    ["Trench Whistle", "OfficerC"],
+    ["Recon Kit", "OfficerC"],
+    ["Hunter Kit", "JaegerC"],
+    ["Smokescreen Bombs", "JaegerC"],
+    ["Heavy Lance", "LancerC"],
+    ["Throwing Axes", "LancerC"],
+    ["Painkiller Injector", "LancerC"],
+    ["Bulwark's Shield", "BulwarkC"],
+    ["Rally Banner" "BulwarkC"]
 ]
 
 shocks = [
