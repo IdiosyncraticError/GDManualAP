@@ -142,7 +142,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 
     for region in multiworld.regions:
         if region.player == player:
-            region.locations.append(loc)
+            region.locations[player] = loc
 
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:
