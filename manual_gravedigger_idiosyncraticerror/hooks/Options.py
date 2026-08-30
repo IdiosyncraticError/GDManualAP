@@ -1,7 +1,8 @@
 # Object classes from AP that represent different types of options that you can create
-from Options import Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, OptionGroup, PerGameCommonOptions
+from Options import Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, OptionSet, OptionGroup, PerGameCommonOptions
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
+from ..Items import item_name_groups
 from typing import Type, Any
 
 
@@ -25,15 +26,37 @@ from typing import Type, Any
 # To add an option, use the before_options_defined hook below and something like this:
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
-class TotalCharactersToWinWith(Range):
-    """Instead of having to beat the game with all characters, you can limit locations to a subset of character victory locations."""
-    display_name = "Number of characters to beat the game with before victory"
-    range_start = 10
+
+class KillCount(Range):
+    """How many kills each location requires"""
+    display_name = "Location Kill Requirement"
+    range_start = 1
+    range_end = 30
+    default = 10
+
+class KitCount(Range):
+    """
+    How many random loadouts will be generated as location
+    0 will use the minimum number of locations
+    """
+    display_name = "Randomized Kit Locations"
+    range_start = 0
     range_end = 50
-    default = 50
+    default = 15
+
+class EnabledClasses(OptionSet):
+    """Classes that will be randomized into the pool"""
+    display_name = "Enabled Classes"
+    keys = item_name_groups["Classes"]
+    default = frozenset(keys)
+
+
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
+    options["location_kills"] = KillCount
+    options["rando_kit_count"] = KitCount
+    options["enabled_classes"] = EnabledClasses
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options

@@ -1,5 +1,8 @@
 import json
 
+#do i even need this if i have to create weapon kill counts using hooks
+#and if kits are randomly generated thats also in hook
+
 primaries = [
     "'Prince' Long Rifle",
     "'Adjudicator' Repeating Rifle",
