@@ -369,7 +369,8 @@
         "name": "'Hope' Automatic Pistol",
         "category": [
             "Weapons",
-            "Secondaries"
+            "Secondaries",
+            "Hope"
         ],
         "progression": true
     },

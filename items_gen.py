@@ -143,6 +143,9 @@ for g in secondaries:
     obj["count"] = 1
     obj["name"] = g
     obj["category"] = ["Weapons", "Secondaries"]
+    if g == "'Hope' Automatic Pistol":
+        obj["category"].append("Hope")
+
     obj["progression"] = True
     output.append(obj)
 

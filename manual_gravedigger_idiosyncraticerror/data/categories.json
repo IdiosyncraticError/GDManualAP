@@ -32,5 +32,10 @@
         "yaml_option": [
             "random_class_tool"
         ]
+    },
+    "Hope": {
+        "yaml_option": [
+            "hope_item"
+        ]
     }
 }

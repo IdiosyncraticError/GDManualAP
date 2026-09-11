@@ -246,13 +246,13 @@
         ]
     },
     {
-        "name": "<placeholder-random> kills on: Soldat, Prince, Hope/Honour, Appa",
+        "name": "<placeholder-random> kills on: Soldat, Prince, Hope/Honour, Apparition",
         "category": "Random Kits",
         "region": "SoldatR",
         "requires": "|'Prince' Long Rifle| and (OptOne{|'Hope' Automatic Pistol|} or |'Honour' Duty Pistol|) and |Apparition|"
     },
     {
-        "name": "<placeholder-random> kills on: Soldat, Equine Sawed, Grace, Tunnel",
+        "name": "<placeholder-random> kills on: Soldat, Equine Sawed, Grace, Tunnel-Rat",
         "category": "Random Kits",
         "region": "SoldatR",
         "requires": "|'Equine' Sawed Shotgun| and |'Grace' Service Revolver| and |Tunnel-Rat|"
@@ -270,13 +270,13 @@
         "requires": "|'Talon' Cavalry Revolver| and |'Talon' Army Revolver| and |Veteran|"
     },
     {
-        "name": "<placeholder-random> kills on: Soldat, Crossbow, Talon, Appa",
+        "name": "<placeholder-random> kills on: Soldat, Crossbow, Talon, Apparition",
         "category": "Random Kits",
         "region": "SoldatR",
         "requires": "|'Okhotnik' Hunting Crossbow| and |'Talon' Army Revolver| and |Apparition|"
     },
     {
-        "name": "<placeholder-random> kills on: Soldat, Whisper, Knell, Appa",
+        "name": "<placeholder-random> kills on: Soldat, Whisper, Knell, Apparition",
         "category": "Random Kits",
         "region": "SoldatR",
         "requires": "|'Whisper' Silenced Rifle| and |'Knell' Silenced Revolver| and |Apparition|"
@@ -288,7 +288,7 @@
         "requires": "|'Equine' Riding Shotgun| and |'Knell' Bandit Revolver| and |Greyhound|"
     },
     {
-        "name": "<placeholder-random> kills on: Soldat, Hellion, Grace/Knell, Appa",
+        "name": "<placeholder-random> kills on: Soldat, Hellion, Grace/Knell, Apparition",
         "category": "Random Kits",
         "region": "SoldatR",
         "requires": "|'Hellion' Automatic Shotgun| and (|'Grace' Service Revolver| or |'Knell' Silenced Revolver|) and |Apparition|"
@@ -354,19 +354,19 @@
         "requires": "|'Negotiator' Pocket Shotgun| and |'Negotiator' Pocket Shotgun| and |Butcher|"
     },
     {
-        "name": "<placeholder-random> kills on: Mortician, Grace, Grace, Ambi",
+        "name": "<placeholder-random> kills on: Mortician, Grace, Grace, Ambidextrous",
         "category": "Random Kits",
         "region": "MorticianR",
         "requires": "|'Grace' Service Revolver| and |'Grace' Service Revolver| and |Ambidextrous|"
     },
     {
-        "name": "<placeholder-random> kills on: Mortician, Honour Insurgent, Honour Insurgent, Ambi",
+        "name": "<placeholder-random> kills on: Mortician, Honour Insurgent, Honour Insurgent, Ambidextrous",
         "category": "Random Kits",
         "region": "MorticianR",
         "requires": "|'Honour' Insurgent Pistol| and |'Honour' Insurgent Pistol| and |Ambidextrous|"
     },
     {
-        "name": "<placeholder-random> kills on: Mortician, Kingslayer, , Tunnel",
+        "name": "<placeholder-random> kills on: Mortician, Kingslayer, , Tunnel-Rat",
         "category": "Random Kits",
         "region": "MorticianR",
         "requires": "|'Kingslayer' Percussion Revolver| and |Tunnel-Rat|"
@@ -384,7 +384,7 @@
         "requires": "|'Whisper' Flyboy Rifle| and |Chemist|"
     },
     {
-        "name": "<placeholder-random> kills on: Mortician, Equine Sawed, , Tunnel",
+        "name": "<placeholder-random> kills on: Mortician, Equine Sawed, , Tunnel-Rat",
         "category": "Random Kits",
         "region": "MorticianR",
         "requires": "|'Equine' Sawed Shotgun| and |Tunnel-Rat|"
@@ -402,13 +402,13 @@
         "requires": "|'Talon' Army Revolver| and |'Talon' Army Revolver| and |Devil Dog|"
     },
     {
-        "name": "<placeholder-random> kills on: Jaeger, Grace, Union, Appa",
+        "name": "<placeholder-random> kills on: Jaeger, Grace, Union, Apparition",
         "category": "Random Kits",
         "region": "JaegerR",
         "requires": "|'Grace' Service Revolver| and |'Union' Military Pistol| and |Apparition|"
     },
     {
-        "name": "<placeholder-random> kills on: Jaeger, Crestfall, , Tunnel",
+        "name": "<placeholder-random> kills on: Jaeger, Crestfall, , Tunnel-Rat",
         "category": "Random Kits",
         "region": "JaegerR",
         "requires": "|'Crestfall' Lever Rifle| and |Tunnel-Rat|"
@@ -420,7 +420,7 @@
         "requires": "|'Grace' Service Revolver| and |Butcher|"
     },
     {
-        "name": "<placeholder-random> kills on: Lancer, , , Appa",
+        "name": "<placeholder-random> kills on: Lancer, , , Apparition",
         "category": "Random Kits",
         "region": "LancerR",
         "requires": "|Apparition|"

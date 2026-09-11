@@ -73,6 +73,14 @@ class FillerName(Choice):
     option_royal_nation = 0
     option_golden_empire = 1
 
+class Hope(Toggle):
+    """
+    Enable to add Hope as an unlock.
+    ***IF YOU DO NOT HAVE HOPE DO NOT TURN THIS ON***
+    or i guess do if you want like a free location
+    """
+    display_name = "Hope Unlock"
+
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["win_count"] = WinCount
@@ -82,6 +90,7 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["random_tool"] = RandomTools
     options["random_class_tool"] = RandomClassTools
     options["filler_name"] = FillerName
+    options["hope_item"] = Hope
     return options
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
