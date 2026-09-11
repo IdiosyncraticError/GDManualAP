@@ -95,9 +95,9 @@ for i in mods:
     obj = {}
     obj["name"] = "<placeholder> kills with " + i
     if i == "'Knell' Bandit Revolver" or i == "'Honour' Insurgent Pistol":
-        obj["category"] = ["Weapons", "Secondaries"]
+        obj["category"] = ["Weapons", "Mods", "Secondaries"]
     else:
-        obj["category"] = ["Weapons", "Primaries"]
+        obj["category"] = ["Weapons", "Mods", "Primaries"]
     obj["requires"] = "|" + i + "|"
     output.append(obj)
 
@@ -121,14 +121,14 @@ for i in equipment:
 # for future, pick randomly from the lists above so no read function is needed (cough multiple options cough)
 temp_suggestions = [
     ["Soldat", "Prince", "Hope/Honour", "Apparition"],
-    ["Soldat", "Equine Sawed", "Grace", "Tunnel-Rat"],
+    ["Soldat", "Equine Sawed Off", "Grace", "Tunnel-Rat"],
     ["Soldat", "Judgement", "Grace", "Black Hand"],
     ["Soldat", "Talon Cavalry", "Talon", "Veteran"],
     ["Soldat", "Crossbow", "Talon", "Apparition"],
     ["Soldat", "Whisper", "Knell", "Apparition"],
     ["Soldat", "Equine", "Knell Bandit", "Greyhound"],
     ["Soldat", "Hellion", "Grace/Knell", "Apparition"], #jester this is highkey appa slop bro
-    ["Soldat", "Volk Front", "Talon", "Black Hand"],
+    ["Soldat", "Volk Frontline", "Talon", "Black Hand"],
     ["Soldat", "Negotiator Long", "Negotiator", "Greyhound"],
     ["Soldat", "Judgement Incendiary", "Grace", "Devil Dog"],
     ["Rook", "Volk", "Talon/Negotiator", "Survivalist"],
@@ -143,7 +143,7 @@ temp_suggestions = [
     ["Mortician", "Kingslayer", "", "Tunnel-Rat"],
     ["Mortician", "Adjudicator", "", "Veteran"],
     ["Mortician", "Whisper Flyboy", "", "Chemist"],
-    ["Mortician", "Equine Sawed", "", "Tunnel-Rat"],
+    ["Mortician", "Equine Sawed Off", "", "Tunnel-Rat"],
     ["Officer", "Judgement Incendiary", "Talon", "Survivalist"],
     ["Officer", "Talon", "Talon", "Devil Dog"],
     ["Jaeger", "Grace", "Union", "Apparition"],
@@ -193,6 +193,15 @@ def get_perk(perk: str):
         if perk in i:
             return i
 
+def get_mod_category(weapon: str):
+    cat = ""
+    mod = weapon.rsplit(" ")[0]
+    for i in mods:
+        if mod in i:
+            cat = i
+
+    return i + " Category"
+
 for i in temp_suggestions:
     obj = {}
     obj["name"] = "<placeholder-random> kills on: "
@@ -204,12 +213,19 @@ for i in temp_suggestions:
     obj["category"] = ["Random Kits", i[0] + "C"]
     obj["region"] = i[0] + "R"
     requirestring = ""
+    hasMod = False
+
     for j in range(3):
         if j != 2 and i[j+1] != "":
             requirestring += read_require(i[j+1])
             requirestring += " and "
+            if " " in i[j+1]:
+                hasMod = True
+                obj["category"].append(get_mod_category(i[j+1]))
         elif i[j+1] != "":
             requirestring += "|" + get_perk(i[j+1]) + "|"
+    if(hasMod):
+        obj["category"].append("Mods")
     obj["requires"] = requirestring
     output.append(obj)
 

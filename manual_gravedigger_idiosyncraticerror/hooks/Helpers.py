@@ -14,6 +14,13 @@ def before_is_category_enabled(multiworld: MultiWorld, player: int, category_nam
             enabled_classes.append(c + "C")
         return category_name in enabled_classes
 
+    mods = get_option_value(multiworld, player, "mods_list")
+    if category_name.endswith(" Category"):
+        enabled_mods = []
+        for m in mods:
+            enabled_mods.append(m + " Category")
+        return category_name in enabled_mods
+
     return None
 
 # Use this if you want to override the default behavior of is_option_enabled

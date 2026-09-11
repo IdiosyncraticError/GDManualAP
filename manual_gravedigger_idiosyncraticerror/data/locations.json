@@ -169,6 +169,7 @@
         "name": "<placeholder> kills with 'Whisper' Flyboy Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Whisper' Flyboy Rifle|"
@@ -177,6 +178,7 @@
         "name": "<placeholder> kills with 'Negotiator' Long Shotgun",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Negotiator' Long Shotgun|"
@@ -185,6 +187,7 @@
         "name": "<placeholder> kills with 'Union' Stocked Pistol",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Union' Stocked Pistol|"
@@ -193,6 +196,7 @@
         "name": "<placeholder> kills with 'Hellion' Heavy Shotgun",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Hellion' Heavy Shotgun|"
@@ -201,6 +205,7 @@
         "name": "<placeholder> kills with 'Judgement' Incendiary Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Judgement' Incendiary Rifle|"
@@ -209,6 +214,7 @@
         "name": "<placeholder> kills with 'Talon' Cavalry Revolver",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Talon' Cavalry Revolver|"
@@ -217,6 +223,7 @@
         "name": "<placeholder> kills with 'Volk' Frontline Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Volk' Frontline Rifle|"
@@ -225,6 +232,7 @@
         "name": "<placeholder> kills with 'Crestfall' Ranger Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Crestfall' Ranger Rifle|"
@@ -233,6 +241,7 @@
         "name": "<placeholder> kills with 'Jesse' Precision Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Jesse' Precision Rifle|"
@@ -241,6 +250,7 @@
         "name": "<placeholder> kills with 'Equine' Sawed Shotgun",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "requires": "|'Equine' Sawed Shotgun|"
@@ -249,6 +259,7 @@
         "name": "<placeholder> kills with 'Knell' Bandit Revolver",
         "category": [
             "Weapons",
+            "Mods",
             "Secondaries"
         ],
         "requires": "|'Knell' Bandit Revolver|"
@@ -257,6 +268,7 @@
         "name": "<placeholder> kills with 'Honour' Insurgent Pistol",
         "category": [
             "Weapons",
+            "Mods",
             "Secondaries"
         ],
         "requires": "|'Honour' Insurgent Pistol|"
@@ -289,10 +301,12 @@
         "requires": "|'Prince' Long Rifle| and (OptOne{|'Hope' Automatic Pistol|} or |'Honour' Duty Pistol|) and |Apparition|"
     },
     {
-        "name": "<placeholder-random> kills on: Soldat, Equine Sawed, Grace, Tunnel-Rat",
+        "name": "<placeholder-random> kills on: Soldat, Equine Sawed Off, Grace, Tunnel-Rat",
         "category": [
             "Random Kits",
-            "SoldatC"
+            "SoldatC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "SoldatR",
         "requires": "|'Equine' Sawed Shotgun| and |'Grace' Service Revolver| and |Tunnel-Rat|"
@@ -310,7 +324,9 @@
         "name": "<placeholder-random> kills on: Soldat, Talon Cavalry, Talon, Veteran",
         "category": [
             "Random Kits",
-            "SoldatC"
+            "SoldatC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "SoldatR",
         "requires": "|'Talon' Cavalry Revolver| and |'Talon' Army Revolver| and |Veteran|"
@@ -337,7 +353,9 @@
         "name": "<placeholder-random> kills on: Soldat, Equine, Knell Bandit, Greyhound",
         "category": [
             "Random Kits",
-            "SoldatC"
+            "SoldatC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "SoldatR",
         "requires": "|'Equine' Riding Shotgun| and |'Knell' Bandit Revolver| and |Greyhound|"
@@ -352,10 +370,12 @@
         "requires": "|'Hellion' Automatic Shotgun| and (|'Grace' Service Revolver| or |'Knell' Silenced Revolver|) and |Apparition|"
     },
     {
-        "name": "<placeholder-random> kills on: Soldat, Volk Front, Talon, Black Hand",
+        "name": "<placeholder-random> kills on: Soldat, Volk Frontline, Talon, Black Hand",
         "category": [
             "Random Kits",
-            "SoldatC"
+            "SoldatC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "SoldatR",
         "requires": "|'Volk' Frontline Rifle| and |'Talon' Army Revolver| and |Black Hand|"
@@ -364,7 +384,9 @@
         "name": "<placeholder-random> kills on: Soldat, Negotiator Long, Negotiator, Greyhound",
         "category": [
             "Random Kits",
-            "SoldatC"
+            "SoldatC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "SoldatR",
         "requires": "|'Negotiator' Long Shotgun| and |'Negotiator' Pocket Shotgun| and |Greyhound|"
@@ -373,7 +395,9 @@
         "name": "<placeholder-random> kills on: Soldat, Judgement Incendiary, Grace, Devil Dog",
         "category": [
             "Random Kits",
-            "SoldatC"
+            "SoldatC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "SoldatR",
         "requires": "|'Judgement' Incendiary Rifle| and |'Grace' Service Revolver| and |Devil Dog|"
@@ -400,7 +424,9 @@
         "name": "<placeholder-random> kills on: Mortician, Hellion Heavy, , Black Hand",
         "category": [
             "Random Kits",
-            "MorticianC"
+            "MorticianC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "MorticianR",
         "requires": "|'Hellion' Heavy Shotgun| and |Black Hand|"
@@ -409,7 +435,9 @@
         "name": "<placeholder-random> kills on: Mortician, Crestfall Ranger, , Devil Dog",
         "category": [
             "Random Kits",
-            "MorticianC"
+            "MorticianC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "MorticianR",
         "requires": "|'Crestfall' Ranger Rifle| and |Devil Dog|"
@@ -454,7 +482,10 @@
         "name": "<placeholder-random> kills on: Mortician, Honour Insurgent, Honour Insurgent, Ambidextrous",
         "category": [
             "Random Kits",
-            "MorticianC"
+            "MorticianC",
+            "'Honour' Insurgent Pistol Category",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "MorticianR",
         "requires": "|'Honour' Insurgent Pistol| and |'Honour' Insurgent Pistol| and |Ambidextrous|"
@@ -481,16 +512,20 @@
         "name": "<placeholder-random> kills on: Mortician, Whisper Flyboy, , Chemist",
         "category": [
             "Random Kits",
-            "MorticianC"
+            "MorticianC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "MorticianR",
         "requires": "|'Whisper' Flyboy Rifle| and |Chemist|"
     },
     {
-        "name": "<placeholder-random> kills on: Mortician, Equine Sawed, , Tunnel-Rat",
+        "name": "<placeholder-random> kills on: Mortician, Equine Sawed Off, , Tunnel-Rat",
         "category": [
             "Random Kits",
-            "MorticianC"
+            "MorticianC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "MorticianR",
         "requires": "|'Equine' Sawed Shotgun| and |Tunnel-Rat|"
@@ -499,7 +534,9 @@
         "name": "<placeholder-random> kills on: Officer, Judgement Incendiary, Talon, Survivalist",
         "category": [
             "Random Kits",
-            "OfficerC"
+            "OfficerC",
+            "'Honour' Insurgent Pistol Category",
+            "Mods"
         ],
         "region": "OfficerR",
         "requires": "|'Judgement' Incendiary Rifle| and |'Talon' Army Revolver| and |Survivalist|"
