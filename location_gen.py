@@ -83,6 +83,12 @@ for i in primaries:
     obj["requires"] = "|" + i + "|"
     output.append(obj)
 
+    obj2 = {}
+    obj2["name"] = "<placeholder2> kills with " + i
+    obj2["category"] = ["Weapons", "Primaries"]
+    obj2["requires"] = "|" + i + "|"
+    output.append(obj2)
+
 for i in secondaries:
     obj = {}
     obj["name"] = "<placeholder> kills with " + i
@@ -91,6 +97,14 @@ for i in secondaries:
         obj["category"].append("Hope")
     obj["requires"] = "|" + i + "|"
     output.append(obj)
+
+    obj2 = {}
+    obj2["name"] = "<placeholder2> kills with " + i
+    obj2["category"] = ["Weapons", "Secondaries"]
+    if i == "'Hope' Automatic Pistol":
+        obj2["category"].append("Hope")
+    obj2["requires"] = "|" + i + "|"
+    output.append(obj2)
 
 for i in mods:
     obj = {}
@@ -101,6 +115,15 @@ for i in mods:
         obj["category"] = ["Weapons", "Mods", "Primaries"]
     obj["requires"] = "|" + i + "|"
     output.append(obj)
+
+    obj2 = {}
+    obj2["name"] = "<placeholder2> kills with " + i
+    if i == "'Knell' Bandit Revolver" or i == "'Honour' Insurgent Pistol":
+        obj2["category"] = ["Weapons", "Mods", "Secondaries"]
+    else:
+        obj2["category"] = ["Weapons", "Mods", "Primaries"]
+    obj2["requires"] = "|" + i + "|"
+    output.append(obj2)
 
 for i in equipment:
     obj = {}
@@ -229,6 +252,6 @@ for i in temp_suggestions:
         obj["category"].append("Mods")
     obj["requires"] = requirestring
     output.append(obj)
-    
+
 with open("locations.json", "w") as file:
     json.dump(output, file, indent=4)
