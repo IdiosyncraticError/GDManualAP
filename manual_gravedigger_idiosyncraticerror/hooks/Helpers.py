@@ -23,6 +23,11 @@ def before_is_item_enabled(multiworld: MultiWorld, player: int, item:  dict[str,
     classes = get_option_value(multiworld, player, "enabled_classes")
     if "Classes" in item["category"]:
         return item["name"] in classes
+
+    mods = get_option_value(multiworld, player, "mods_list")
+    if "Mods" in item["category"]:
+        return item["name"] in mods
+
     return None
 
 # Use this if you want to override the default behavior of is_option_enabled

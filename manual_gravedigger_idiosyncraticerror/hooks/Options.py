@@ -75,6 +75,17 @@ class StartingGuns(Range):
     display_name = "Starting Gun Count"
     range_start = 1
     range_end = 4
+    default = 1
+
+class GunMods(DefaultOnToggle):
+    """Enables weapon mods"""
+    display_name = "Weapon Mods"
+
+class ListMods(OptionSet):
+    """Choose which weapon mods to enable"""
+    display_name = "Weapon Mods (Advanced)"
+    keys = item_name_groups["Mods"]
+    default = frozenset(keys)
 
 class FillerName(Choice):
     """Pick a side for filler item names"""
@@ -98,6 +109,9 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["enabled_classes"] = EnabledClasses
     options["random_tool"] = RandomTools
     options["random_class_tool"] = RandomClassTools
+    options["starting_gun_count"] = StartingGuns
+    options["mods_toggle"] = GunMods
+    options["mods_list"] = ListMods
     options["filler_name"] = FillerName
     options["hope_item"] = Hope
     return options

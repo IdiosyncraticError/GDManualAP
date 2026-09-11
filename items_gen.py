@@ -154,9 +154,9 @@ for g in mods:
     obj["count"] = 1
     obj["name"] = g
     if g == "'Knell' Bandit Revolver" or g == "'Honour' Insurgent Pistol":
-        obj["category"] = ["Weapons", "Secondaries"]
+        obj["category"] = ["Weapons", "Mods", "Secondaries"]
     else:
-        obj["category"] = ["Weapons", "Primaries"]
+        obj["category"] = ["Weapons", "Mods", "Primaries"]
     obj["progression"] = True
     output.append(obj)
 

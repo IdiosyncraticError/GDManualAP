@@ -442,6 +442,7 @@
         "name": "'Whisper' Flyboy Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -451,6 +452,7 @@
         "name": "'Negotiator' Long Shotgun",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -460,6 +462,7 @@
         "name": "'Union' Stocked Pistol",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -469,6 +472,7 @@
         "name": "'Hellion' Heavy Shotgun",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -478,6 +482,7 @@
         "name": "'Judgement' Incendiary Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -487,6 +492,7 @@
         "name": "'Talon' Cavalry Revolver",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -496,6 +502,7 @@
         "name": "'Volk' Frontline Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -505,6 +512,7 @@
         "name": "'Crestfall' Ranger Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -514,6 +522,7 @@
         "name": "'Jesse' Precision Rifle",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -523,6 +532,7 @@
         "name": "'Equine' Sawed Shotgun",
         "category": [
             "Weapons",
+            "Mods",
             "Primaries"
         ],
         "progression": true
@@ -532,6 +542,7 @@
         "name": "'Knell' Bandit Revolver",
         "category": [
             "Weapons",
+            "Mods",
             "Secondaries"
         ],
         "progression": true
@@ -541,6 +552,7 @@
         "name": "'Honour' Insurgent Pistol",
         "category": [
             "Weapons",
+            "Mods",
             "Secondaries"
         ],
         "progression": true

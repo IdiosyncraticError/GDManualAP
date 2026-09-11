@@ -36,6 +36,12 @@
     "Hope": {
         "yaml_option": [
             "hope_item"
+        ],
+        "hidden": true
+    },
+    "Mods": {
+        "yaml_option": [
+            "mods_toggle"
         ]
     }
 }
