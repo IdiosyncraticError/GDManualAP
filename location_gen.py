@@ -79,6 +79,7 @@ for i in primaries:
     obj = {}
     obj["name"] = "<placeholder> kills with " + i
     obj["category"] = ["Weapons", "Primaries"]
+    obj["requires"] = "|" + i + "|"
     output.append(obj)
 
 for i in secondaries:
@@ -87,7 +88,7 @@ for i in secondaries:
     obj["category"] = ["Weapons", "Secondaries"]
     if i == "'Hope' Automatic Pistol":
         obj["category"].append("Hope")
-
+    obj["requires"] = "|" + i + "|"
     output.append(obj)
 
 for i in mods:
@@ -97,6 +98,7 @@ for i in mods:
         obj["category"] = ["Weapons", "Secondaries"]
     else:
         obj["category"] = ["Weapons", "Primaries"]
+    obj["requires"] = "|" + i + "|"
     output.append(obj)
 
 for i in equipment:
@@ -107,6 +109,7 @@ for i in equipment:
     else:
         obj["region"] = "LancerR"
     obj["category"] = ["Weapons", "Class Equipment"]
+    obj["requires"] = "|" + i + "|"
     output.append(obj)
 
 # evil ass random locations
@@ -158,7 +161,12 @@ def read_require(weapon: str):
         weapons = []
         for i in weaponlist:
             weapons.append(get_weapon(i))
-        final = weapons[0] + "| or |" + weapons[1]
+
+        if "Hope" in weapons[0]:
+            final = "(OptOne{|" + weapons[0] + "|} or |" + weapons[1] + "|)"
+            return final
+        final = "(|" + weapons[0] + "| or |" + weapons[1] + "|)"
+        return final
     elif " " in weapon:
         mod = weapon.rsplit(" ")
         final = get_weapon_mod(mod[0])

@@ -22,6 +22,7 @@ options for how many randomized loadouts there should be
 
 
 todo:
-- random kit location creation in world
-- edit weapon locations based on option in world
-- 
+- random kit location creation in ~~world~~ generation script
+- edit weapon locations based on option in ~~world~~ generation script
+- starting inventory
+- optionlist for enabling specific weapon modifications + toggle for weapon mods

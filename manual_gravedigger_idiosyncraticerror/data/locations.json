@@ -9,84 +9,96 @@
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Prince' Long Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Adjudicator' Repeating Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Adjudicator' Repeating Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Kingslayer' Percussion Revolver",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Kingslayer' Percussion Revolver|"
     },
     {
         "name": "<placeholder> kills with 'Okhotnik' Hunting Crossbow",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Okhotnik' Hunting Crossbow|"
     },
     {
         "name": "<placeholder> kills with 'Whisper' Silenced Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Whisper' Silenced Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Crestfall' Lever Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Crestfall' Lever Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Jesse' Combat Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Jesse' Combat Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Equine' Riding Shotgun",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Equine' Riding Shotgun|"
     },
     {
         "name": "<placeholder> kills with 'Volk' Scoped Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Volk' Scoped Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Judgement' Breech Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Judgement' Breech Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Hellion' Automatic Shotgun",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Hellion' Automatic Shotgun|"
     },
     {
         "name": "<placeholder> kills with 'Grace' Service Revolver",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Grace' Service Revolver|"
     },
     {
         "name": "<placeholder> kills with 'Hope' Automatic Pistol",
@@ -94,140 +106,160 @@
             "Weapons",
             "Secondaries",
             "Hope"
-        ]
+        ],
+        "requires": "|'Hope' Automatic Pistol|"
     },
     {
         "name": "<placeholder> kills with 'Honour' Duty Pistol",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Honour' Duty Pistol|"
     },
     {
         "name": "<placeholder> kills with 'Talon' Army Revolver",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Talon' Army Revolver|"
     },
     {
         "name": "<placeholder> kills with Cavalry Sword",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|Cavalry Sword|"
     },
     {
         "name": "<placeholder> kills with 'Negotiator' Pocket Shotgun",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Negotiator' Pocket Shotgun|"
     },
     {
         "name": "<placeholder> kills with 'Knell' Silenced Revolver",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Knell' Silenced Revolver|"
     },
     {
         "name": "<placeholder> kills with 'Union' Military Pistol",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Union' Military Pistol|"
     },
     {
         "name": "<placeholder> kills with 'Auclair' Lever Pistol",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Auclair' Lever Pistol|"
     },
     {
         "name": "<placeholder> kills with 'Whisper' Flyboy Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Whisper' Flyboy Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Negotiator' Long Shotgun",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Negotiator' Long Shotgun|"
     },
     {
         "name": "<placeholder> kills with 'Union' Stocked Pistol",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Union' Stocked Pistol|"
     },
     {
         "name": "<placeholder> kills with 'Hellion' Heavy Shotgun",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Hellion' Heavy Shotgun|"
     },
     {
         "name": "<placeholder> kills with 'Judgement' Incendiary Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Judgement' Incendiary Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Talon' Cavalry Revolver",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Talon' Cavalry Revolver|"
     },
     {
         "name": "<placeholder> kills with 'Volk' Frontline Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Volk' Frontline Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Crestfall' Ranger Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Crestfall' Ranger Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Jesse' Precision Rifle",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Jesse' Precision Rifle|"
     },
     {
         "name": "<placeholder> kills with 'Equine' Sawed Shotgun",
         "category": [
             "Weapons",
             "Primaries"
-        ]
+        ],
+        "requires": "|'Equine' Sawed Shotgun|"
     },
     {
         "name": "<placeholder> kills with 'Knell' Bandit Revolver",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Knell' Bandit Revolver|"
     },
     {
         "name": "<placeholder> kills with 'Honour' Insurgent Pistol",
         "category": [
             "Weapons",
             "Secondaries"
-        ]
+        ],
+        "requires": "|'Honour' Insurgent Pistol|"
     },
     {
         "name": "<placeholder> kills with Mining Bomb LauncherHeavy Lance",
@@ -235,7 +267,8 @@
         "category": [
             "Weapons",
             "Class Equipment"
-        ]
+        ],
+        "requires": "|Mining Bomb LauncherHeavy Lance|"
     },
     {
         "name": "<placeholder> kills with Throwing Axes",
@@ -243,7 +276,8 @@
         "category": [
             "Weapons",
             "Class Equipment"
-        ]
+        ],
+        "requires": "|Throwing Axes|"
     },
     {
         "name": "<placeholder-random> kills on: Soldat, Prince, Hope/Honour, Apparition",

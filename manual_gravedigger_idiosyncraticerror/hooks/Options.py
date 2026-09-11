@@ -67,6 +67,15 @@ class RandomClassTools(Toggle):
     """Randomizes class specific items (e.g. ammo pouch, bulwark shield, hunting kit)"""
     display_name = "Randomized Perk Equipment"
 
+class StartingGuns(Range):
+    """
+    Number of guns you starts with.
+    Chooses from primaries, secondaries, and mods (if enabled)
+    """
+    display_name = "Starting Gun Count"
+    range_start = 1
+    range_end = 4
+
 class FillerName(Choice):
     """Pick a side for filler item names"""
     display_name = "Filler Name"
