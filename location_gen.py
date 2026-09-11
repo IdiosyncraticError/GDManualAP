@@ -1,4 +1,5 @@
 import json
+import random
 
 #do i even need this if i have to create weapon kill counts using hooks
 #and if kits are randomly generated thats also in hook
@@ -228,6 +229,6 @@ for i in temp_suggestions:
         obj["category"].append("Mods")
     obj["requires"] = requirestring
     output.append(obj)
-
+    
 with open("locations.json", "w") as file:
     json.dump(output, file, indent=4)
