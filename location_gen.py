@@ -62,7 +62,7 @@ perks = [
 ]
 
 equipment = [
-    "Mining Bomb Launcher"
+    "Mining Bomb Launcher",
     "Heavy Lance",
     "Throwing Axes"
 ]

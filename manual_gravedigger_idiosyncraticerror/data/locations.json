@@ -274,13 +274,22 @@
         "requires": "|'Honour' Insurgent Pistol|"
     },
     {
-        "name": "<placeholder> kills with Mining Bomb LauncherHeavy Lance",
+        "name": "<placeholder> kills with Mining Bomb Launcher",
+        "region": "RookR",
+        "category": [
+            "Weapons",
+            "Class Equipment"
+        ],
+        "requires": "|Mining Bomb Launcher|"
+    },
+    {
+        "name": "<placeholder> kills with Heavy Lance",
         "region": "LancerR",
         "category": [
             "Weapons",
             "Class Equipment"
         ],
-        "requires": "|Mining Bomb LauncherHeavy Lance|"
+        "requires": "|Heavy Lance|"
     },
     {
         "name": "<placeholder> kills with Throwing Axes",
