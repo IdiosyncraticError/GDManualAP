@@ -55,9 +55,9 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
     ]
     side = get_option_value(multiworld, player, "filler_name")
     if side == 0:
-        return world.random.choice("King's Decree: " + filler_nation)
+        return "King's Decree: " + world.random.choice(filler_nation)
     else:
-        return world.random.choice("Queen's Will: " + filler_empire)
+        return "Queen's Will: " + world.random.choice(filler_empire)
 
     return False
 
