@@ -193,7 +193,7 @@ for i in temp_suggestions:
         if index != 3:
             obj["name"] += ", "
 
-    obj["category"] = "Random Kits"
+    obj["category"] = ["Random Kits", i[0] + "C"]
     obj["region"] = i[0] + "R"
     requirestring = ""
     for j in range(3):

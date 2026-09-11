@@ -85,65 +85,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                 if location.name in locationNamesToRemove:
                     region.locations.remove(location)
 
-    primaries = [
-        "'Prince' Long Rifle",
-        "'Adjudicator' Repeating Rifle",
-        "'Kingslayer' Percussion Revolver",
-        "'Okhotnik' Hunting Crossbow",
-        "'Whisper' Silenced Rifle",
-        "'Crestfall' Lever Rifle",
-        "'Jesse' Combat Rifle",
-        "'Equine' Riding Shotgun",
-        "'Volk' Scoped Rifle",
-        "'Judgement' Breech Rifle",
-        "'Hellion' Automatic Shotgun"
-    ]
-
-    secondaries = [
-        "'Grace' Service Revolver",
-        "'Hope' Automatic Pistol",
-        "'Honour' Duty Pistol",
-        "'Talon' Army Revolver",
-        "Cavalry Sword",
-        "'Negotiator' Pocket Shotgun",
-        "'Knell' Silenced Revolver",
-        "'Union' Military Pistol",
-        "'Auclair' Lever Pistol"
-    ]
-
-    mods = [
-        "'Whisper' Flyboy Rifle",
-        "'Negotiator' Long Shotgun",
-        "'Union' Stocked Pistol",
-        "'Hellion' Heavy Shotgun",
-        "'Judgement' Incendiary Rifle",
-        "'Talon' Cavalry Revolver",
-        "'Volk' Frontline Rifle",
-        "'Crestfall' Ranger Rifle",
-        "'Jesse' Precision Rifle",
-        "'Equine' Sawed Shotgun",
-        "'Knell' Bandit Revolver",
-        "'Honour' Insurgent Pistol"
-    ]
-
-    equipment = [
-        "Mining Bomb Launcher"
-        "Heavy Lance",
-        "Throwing Axes"
-    ]
-
-    killcount = get_option_value(multiworld, player, "location_kills")
-
-    for weapon in primaries: #modifying weapon locations
-        loc = {}
-        loc["name"] = str(killcount) + " kills using " + weapon
-        loc["category"] = ["Weapons", "Primaries"]
-        loc["requires"] = "|" + weapon + "|"
-
-    for region in multiworld.regions:
-        if region.player == player:
-            region.locations[player] = loc
-
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:
 # {"Item Name": 5} <- This will create qty 5 items using all the default settings
