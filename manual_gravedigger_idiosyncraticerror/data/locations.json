@@ -1,7 +1,7 @@
 [
     {
         "name": "victory",
-        "requires": "{OptionCount(@Weapons, win_count}",
+        "requires": "{OptionCount(@Weapons, win_count)}",
         "victory": true
     },
     {

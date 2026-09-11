@@ -70,7 +70,7 @@ equipment = [
 output = []
 victory = {
     "name": "victory",
-    "requires": "{OptionCount(@Weapons, win_count}",
+    "requires": "{OptionCount(@Weapons, win_count)}",
     "victory": True
 }
 output.append(victory)
