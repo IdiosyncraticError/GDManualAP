@@ -88,7 +88,7 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
 
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    starting_guns = get_option_value(world.options.starting_gun_count)
+    starting_guns = world.options.starting_gun_count
     possible_item_names = []
         
     possible_item_names.extend([
@@ -110,7 +110,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             possible_items.remove(random_starting_item) # don't allow choosing the exact same item again
             item_pool.remove(random_starting_item) # remove it from the pool since we're starting with it
 
-    starting_classes = get_option_value(world.options.starting_class_count)
+    starting_classes = world.options.starting_class_count
     possible_item_names = []
         
     possible_item_names.extend([
@@ -132,7 +132,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             possible_items.remove(random_starting_item) # don't allow choosing the exact same item again
             item_pool.remove(random_starting_item) # remove it from the pool since we're starting with it
 
-    starting_perks = get_option_value(world.options.starting_perk_count)
+    starting_perks = world.options.starting_perk_count
     possible_item_names = []
         
     possible_item_names.extend([
