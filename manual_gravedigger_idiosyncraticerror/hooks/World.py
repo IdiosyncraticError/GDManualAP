@@ -115,7 +115,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         
     possible_item_names.extend([
             name for name, i in world.item_name_to_item.items()
-                if "Class" in i.get("category", []) # .get() accounts for the key not existing and provides a default if it doesn't
+                if "Classes" in i.get("category", []) # .get() accounts for the key not existing and provides a default if it doesn't
     ])
     
     # remove any duplicate names from the list of possible items
