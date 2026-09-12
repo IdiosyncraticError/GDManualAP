@@ -176,5 +176,38 @@ for t in tools:
     obj["progression"] = True
     output.append(obj)
 
+filler_nation = [
+        "This war is not the first and it will not be the last, fight for our future!",
+        "We are stronger than this, Soldiers! Do not give in to these freaks!",
+        "Press on to victory!",
+        "The Nation salutes you!",
+        "Send them all to hell!",
+        "These fanatics think they can rule our proud Nation, show them our might and what true conviction is!",
+        "These tyrants know nothing of freedom! Cut them down and we shall liberate the world from this plague!"
+]
+filler_empire = [
+    "Onwards to victory, for the Golden Empire, and the Golden Era.",
+    "The Reaper looms large over their corrupted hearts. Let them regret being weeds in the garden of God.",
+    "Let these heretics fall by your blade, win this skirmish for the Golden Empire and our future.",
+    "You are blessed this righteous day.",
+    "Fight on and do not falter.",
+    "Maintain your pace.",
+    "The Empire blesses you this day, ensure the dogs do not see the light of day."
+]
+
+for i in filler_nation:
+    obj = {}
+    obj["count"] = 0
+    obj["name"] = "King's Decree: " + i
+    obj["filler"] = True
+    output.append(obj)
+
+for i in filler_empire:
+    obj = {}
+    obj["count"] = 0
+    obj["name"] = "Queen's Will: " + i
+    obj["filler"] = True
+    output.append(obj)
+
 with open("items.json", "w") as file:
     json.dump(output, file, indent=4)
