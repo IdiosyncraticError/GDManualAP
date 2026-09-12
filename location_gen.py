@@ -223,8 +223,8 @@ def get_mod_category(weapon: str):
     for i in mods:
         if mod in i:
             cat = i
-
-    return i + " Category"
+            break
+    return cat + " Category"
 
 for i in temp_suggestions:
     obj = {}
