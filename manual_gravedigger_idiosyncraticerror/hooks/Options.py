@@ -69,13 +69,27 @@ class RandomClassTools(Toggle):
 
 class StartingGuns(Range):
     """
-    Number of guns you starts with.
+    Number of guns you start with.
     Chooses from primaries, secondaries, and mods (if enabled)
     """
     display_name = "Starting Gun Count"
     range_start = 1
     range_end = 4
+    default = 2
+
+class StartingClasses(Range):
+    """Number of classes you start with"""
+    display_name = "Starting Class Count"
+    range_start = 1
+    range_end = 3
     default = 1
+
+class StartingPerks(Range):
+    """Number of perks you start with"""
+    display_name = "Starting Perk Count"
+    range_start = 0
+    range_end = 4
+    default = 2
 
 class GunMods(DefaultOnToggle):
     """Enables weapon mods"""
@@ -109,7 +123,9 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["enabled_classes"] = EnabledClasses
     options["random_tool"] = RandomTools
     options["random_class_tool"] = RandomClassTools
+    options["starting_class_count"] = StartingClasses
     options["starting_gun_count"] = StartingGuns
+    options["starting_perk_count"] = StartingPerks
     options["mods_toggle"] = GunMods
     options["mods_list"] = ListMods
     options["filler_name"] = FillerName

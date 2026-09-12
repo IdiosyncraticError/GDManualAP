@@ -43,5 +43,41 @@
         "yaml_option": [
             "mods_toggle"
         ]
+    },
+    "'Whisper' Flyboy Rifle": {
+        "hidden": true
+    },
+    "'Negotiator' Long Shotgun": {
+        "hidden": true
+    },
+    "'Union' Stocked Pistol": {
+        "hidden": true
+    },
+    "'Hellion' Heavy Shotgun": {
+        "hidden": true
+    },
+    "'Judgement' Incendiary Rifle": {
+        "hidden": true
+    },
+    "'Talon' Cavalry Revolver": {
+        "hidden": true
+    },
+    "'Volk' Frontline Rifle": {
+        "hidden": true
+    },
+    "'Crestfall' Ranger Rifle": {
+        "hidden": true
+    },
+    "'Jesse' Precision Rifle": {
+        "hidden": true
+    },
+    "'Equine' Sawed Shotgun": {
+        "hidden": true
+    },
+    "'Knell' Bandit Revolver": {
+        "hidden": true
+    },
+    "'Honour' Insurgent Pistol": {
+        "hidden": true
     }
 }
