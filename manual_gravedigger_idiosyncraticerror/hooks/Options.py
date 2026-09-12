@@ -37,7 +37,10 @@ class WinCount(Range):
     default = 30
 
 class KillCount(Range):
-    """How many kills each location requires"""
+    """
+    How many kills each location requires
+    THIS SETTING DOES NOT CURRENTLY WORK
+    """
     display_name = "Location Kill Requirement"
     range_start = 5
     range_end = 30
@@ -47,6 +50,7 @@ class KitCount(Range):
     """
     How many random loadouts will be generated as location
     0 will use the minimum number of locations
+    THIS SETTING DOES NOT WORK
     """
     display_name = "Randomized Kit Locations"
     range_start = 0
