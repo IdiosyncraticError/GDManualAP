@@ -226,6 +226,7 @@ def get_mod_category(weapon: str):
             break
     return cat + " Category"
 
+#fix duped requirements/categories (e.g. the double honor insurgent loadout)
 for i in temp_suggestions:
     obj = {}
     obj["name"] = "<placeholder-random> kills on: "

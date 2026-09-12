@@ -35,28 +35,18 @@ import logging
 # Use this function to change the valid filler items to be created to replace item links or starting items.
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
-    filler_nation = [
-        "This war is not the first and it will not be the last, fight for our future!",
-        "We are stronger than this, Soldiers! Do not give in to these freaks!",
-        "Press on to victory!",
-        "The Nation salutes you!",
-        "Send them all to hell!",
-        "These fanatics think they can rule our proud Nation, show them our might and what true conviction is!",
-        "These tyrants know nothing of freedom! Cut them down and we shall liberate the world from this plague!"
-    ]
-    filler_empire = [
-        "Onwards to victory, for the Golden Empire, and the Golden Era.",
-        "The Reaper looms large over their corrupted hearts. Let them regret being weeds in the garden of God.",
-        "Let these heretics fall by your blade, win this skirmish for the Golden Empire and our future.",
-        "You are blessed this righteous day.",
-        "Fight on and do not falter.",
-        "Maintain your pace.",
-        "The Empire blesses you this day, ensure the dogs do not see the light of day."
-    ]
     side = get_option_value(multiworld, player, "filler_name")
     if side == 0:
-        return "King's Decree: " + world.random.choice(filler_nation)
+        filler_nation = [
+            i['name'] for i in world.item_name_to_item.values()
+            if i.get('filler', False) == True and i['name'].startswith("King's Decree: ")
+        ]
+        return world.random.choice(filler_nation)
     else:
+        filler_empire = [
+            i['name'] for i in world.item_name_to_item.values()
+            if i.get('filler', False) == True and i['name'].startswith("Queen's Will : ")
+        ]
         return "Queen's Will: " + world.random.choice(filler_empire)
 
     return False
