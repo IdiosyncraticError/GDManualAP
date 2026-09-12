@@ -27,12 +27,36 @@ def before_is_category_enabled(multiworld: MultiWorld, player: int, category_nam
 # Return True to enable the item, False to disable it, or None to use the default behavior
 def before_is_item_enabled(multiworld: MultiWorld, player: int, item:  dict[str, Any]) -> Optional[bool]:
     from ..Helpers import get_option_value
+    classeslist = [
+    "Soldat",
+    "Rook",
+    "Mortician",
+    "Officer",
+    "Jaeger",
+    "Lancer",
+    "Vanguard"
+    #cowboy eventually maybe
+    ]
     classes = get_option_value(multiworld, player, "enabled_classes")
-    if "Classes" in item["category"]:
+    if item["name"] in classeslist:
         return item["name"] in classes
 
+    modslist = [
+    "'Whisper' Flyboy Rifle",
+    "'Negotiator' Long Shotgun",
+    "'Union' Stocked Pistol",
+    "'Hellion' Heavy Shotgun",
+    "'Judgement' Incendiary Rifle",
+    "'Talon' Cavalry Revolver",
+    "'Volk' Frontline Rifle",
+    "'Crestfall' Ranger Rifle",
+    "'Jesse' Precision Rifle",
+    "'Equine' Sawed Shotgun",
+    "'Knell' Bandit Revolver",
+    "'Honour' Insurgent Pistol"
+    ]
     mods = get_option_value(multiworld, player, "mods_list")
-    if "Mods" in item["category"]:
+    if item["name"] in modslist:
         return item["name"] in mods
 
     return None
