@@ -254,5 +254,18 @@ for i in temp_suggestions:
     obj["requires"] = requirestring
     output.append(obj)
 
-with open("locations.json", "w") as file:
-    json.dump(output, file, indent=4)
+#random pick the amount of things in the loadout: class, primary, secondary, perk
+#then pick random from there
+categories = [
+    "class",
+    "primary",
+    "secondary",
+    "perk"
+] #ok but now the qusetion is if someone has mods turned off or specific ones turned off wtf am i supposed to do about it huh
+
+kitsize = random.randrange(1, 5)
+for i in range(kitsize):
+    pass
+
+#with open("locations.json", "w") as file:
+#    json.dump(output, file, indent=4)
