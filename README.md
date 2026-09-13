@@ -10,7 +10,12 @@ what if i actually randomly generate the loadouts..... JROOOOOL
 so its not like every loadout is specifically primary + secondary + perk + class + class gear(s), some could just be primary + secondary or something like that. but it has to have at least 2. also randomized kill count? idk
 if possible make filler item name randomize between different queens will/kings decree announcement things
 
-maybe add a thing to make like 2 kill locations per gun (e.g. 9 and 18)
+THE KILL COUNTS ARE ALL PLACEHOLDERS BECAUSE ACTUAL IMPLEMENTATION IS A PAIN IN THE ASS. and also would take up 30 million storage. so we're not doing that !
+
+as for keeping track. idk. play em in a row. and on the guns you can just take note of how many kills you have on a weapon before you start. and if you wanna take a break and play normrally. keeping track of the non contributing kills is your own problem
+
+i mean hey this is a manual apworld the whole point is that you would be doing that anyway. LOL !
+idk maybe ill take a look at making a custom client so you can put values down but i dont think thats gonna help. actually maybe if i use evil slot data/spoiler log?
 
 
 kill ceiling: 25-30
